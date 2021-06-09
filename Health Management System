@@ -1,0 +1,108 @@
+# Health Management System
+
+print("Health Management System")
+print("You want to Access the Data or Retrieve the data - ")
+ans = input().upper()
+
+def getdate():
+    import datetime
+    return datetime.datetime.now()
+
+if (ans == "RETRIVE"):
+    print("Press 1 for Harry\n"
+          "Press 2 for Rohan\n"
+          "Press 3 for Hammad\n")
+    cname = int(input("Enter your choice = "))
+    print("What you want to access! \n"
+          "Press 1 for Diet and 2 for Excercise")
+    choice = int(input())
+
+    if cname == 1 and choice == 1:
+        f = open("Harry1.txt", "a")
+        value = input("Type here\n")
+        f.write(str([str(getdate())]) + ":" + value+ "\n")
+        print("Succesfully written!")
+        f.close()
+    elif cname == 2 and choice == 1:
+        f = open("Rohan1.txt", "a")
+        value = input("Type here\n")
+        f.write(str([str(getdate())]) + ":" + value+ "\n")
+        print("Succesfully written!")
+        f.close()
+    elif cname == 3 and choice == 1:
+        f = open("Hammad1.txt", "a")
+        value = input("Type here\n")
+        f.write(str([str(getdate())]) + ":" + value+ "\n")
+        print("Succesfully written!")
+        f.close()
+    elif cname == 2 and choice == 2:
+        f = open("Rohan2.txt", "a")
+        value = input("Type here\n")
+        f.write(str([str(getdate())]) + ":" + value+ "\n")
+        print("Succesfully written!")
+        f.close()
+    elif cname == 3 and choice == 2:
+        f = open("Hammad2.txt", "a")
+        value = input("Type here\n")
+        f.write(str([str(getdate())]) + ":" + value+ "\n")
+        print("Succesfully written!")
+        f.close()
+    elif cname == 1 and choice == 2:
+        f = open("Harry2.txt", "a")
+        value = input("Type here\n")
+        f.write(str([str(getdate())]) + ":" + value+ "\n")
+        print("Succesfully written!")
+        f.close()
+    else:
+        print("Invalid Entry !!!")
+
+
+
+
+elif (ans == "ACCESS"):
+    print("Press 1 for Harry\n"
+          "Press 2 for Rohan\n"
+          "Press 3 for Hammad\n")
+    cname = int(input("Enter your choice = "))
+    print("What you want to access! \n"
+          "Press 1 for Diet and 2 for Excercise")
+    choice = int(input())
+    if cname == 1 and choice == 1:
+        f = open("Harry1.txt", "r")
+        content = f.read()
+        print("[",getdate() , "]", content)
+        f.close()
+    elif cname == 2 and choice == 1:
+        f = open("Rohan1.txt", "r")
+        content = f.read()
+        print("[", getdate(), "]" , content)
+        f.close()
+    elif cname == 3 and choice == 1:
+        f = open("Hammad1.txt", "r")
+        content = f.read()
+        print("[", getdate(), "]" , content)
+        f.close()
+    elif cname == 3 and choice == 2:
+        f = open("Hammad2.txt", "r")
+        content = f.read()
+        print("[", getdate(), "]" , content)
+        f.close()
+    elif cname == 2 and choice == 2:
+        f = open("Rohan2.txt", "r")
+        content = f.read()
+        print("[", getdate(), "]" , content)
+        f.close()
+    elif cname == 1 and choice == 2:
+        f = open("Harry2.txt", "r")
+        content = f.read()
+        print("[", getdate(), "]" , content)
+        f.close()
+    else:
+        print("Invalid Entry !!!")
+
+else: print("Invalid Entry!!")
+
+
+
+
+
