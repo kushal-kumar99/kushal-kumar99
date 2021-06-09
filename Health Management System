@@ -1,14 +1,14 @@
 # Health Management System
 
 print("Health Management System")
-print("You want to Access the Data or Retrieve the data - ")
+print("You want to ACCESS the data or ADD the data - ")
 ans = input().upper()
 
 def getdate():
     import datetime
     return datetime.datetime.now()
 
-if (ans == "RETRIVE"):
+if (ans == "ADD"):
     print("Press 1 for Harry\n"
           "Press 2 for Rohan\n"
           "Press 3 for Hammad\n")
@@ -101,6 +101,8 @@ elif (ans == "ACCESS"):
         print("Invalid Entry !!!")
 
 else: print("Invalid Entry!!")
+
+
 
 
 
